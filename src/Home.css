@@ -1,0 +1,92 @@
+/* Home.css */
+
+/* 전체 홈 화면 스타일 */
+.home {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+/* 헤더 스타일 */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+header img {
+  max-width: 150px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+/* 주요 콘텐츠 스타일 */
+section {
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* 사이드바 스타일 */
+aside {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.mbti-test a {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* 푸터 스타일 */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.social-media {
+  list-style: none;
+  padding: 0;
+}
+
+.social-media li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-media a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.contact-info {
+  margin-top: 10px;
+}
+
+.privacy-policy a {
+  color: #007bff;
+}
