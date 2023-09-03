@@ -1,35 +1,37 @@
 import React from 'react';
-import './Home.css'; // 홈화면에 해당하는 CSS 파일을 import합니다.
-import mainLogo from './img/mainlogo.png'; // 로고 이미지를 import합니다.
+import './css/Home.css'; // 홈화면에 해당하는 CSS 파일을 import합니다.
+import mbti from './img/mbti.png'; // 로고 이미지를 import합니다.
 import PopularPosts from './HomeComponent/PopularPosts'; // 인기 있는 포스트 컴포넌트를 import합니다.
+import RecentPost from './HomeComponent/RecentPosts';
+import Forum from "./HomeComponent/Forum";
 
 function Home() {
     return (
         <div className="home">
             <header>
                 {/* 로고 */}
-                <img src={mainLogo} alt="MBTI 커뮤니티 로고" />
+                <a href="/">
+                    <img src={mbti} alt="MBTI 커뮤니티 로고" />
+                </a>
 
+                <Forum/>
                 {/* 메뉴 바 */}
                 <nav>
-                    <ul>
-                        <li><a href="/">홈</a></li>
-                        <li><a href="/Forum">포럼</a></li>
-                        <li><a href="/test">MBTI 유형 테스트</a></li>
-                        <li><a href="/membership">멤버십 가입</a></li>
-                    </ul>
+
+                    <li><a href="/test">MBTI 유형 테스트</a></li>
+                    <li><a href="/membership">멤버십 가입</a></li>
                 </nav>
+
             </header>
+
+            <section >
+            </section>
 
             <main>
                 {/* 인기 있는 포스트 목록 */}
                 <PopularPosts />
 
-
-                <section className="recent-posts">
-                    <h2>최근 게시물</h2>
-                    {/* 최근 게시물 목록 */}
-                </section>
+                <RecentPost />
 
                 <section className="special-events">
                     <h2>특별한 이벤트 및 뉴스</h2>
@@ -51,12 +53,12 @@ function Home() {
                 <div className="footer-content">
                     {/* 소셜 미디어 링크 */}
                     <ul className="social-media">
-                        <li><a href="#">Facebook</a></li>
+                        {/*<li><a href="#">Facebook</a></li>
                         <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Instagram</a></li>*/}
                     </ul>
                     {/* 연락처 정보 */}
-                    <p className="contact-info">문의: contact@example.com</p>
+                    <p className="contact-info">문의: joonoo3@inha.edu</p>
                 </div>
                 {/* 개인정보 처리 정책 */}
                 <p className="privacy-policy"><a href="/privacy-policy">개인정보 처리 정책</a></p>

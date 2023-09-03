@@ -1,7 +1,7 @@
 // PopularPosts.js
 
-import React, { useState, useEffect } from 'react';
-import '../Home.css';
+import React, {useEffect, useState} from 'react';
+import '../css/Home.css';
 import axios from 'axios'; // Axios 라이브러리를 import
 
 function PopularPosts() {
@@ -23,8 +23,11 @@ function PopularPosts() {
 
     return (
         <section className="featured-content">
-            <h2>인기 있는 포스트</h2>
-            <a href="/createPost">글 작성</a>
+            <header>
+                <h2>인기 있는 포스트</h2>
+                <a href="/post/create">글 작성</a>
+            </header>
+
             <ul>
                 {posts.map((post) => (
                     <li key={post.id}>유저이름 : {post.username} mbti 타입 : {post.mbtiType} 내용 : {post.content}</li>

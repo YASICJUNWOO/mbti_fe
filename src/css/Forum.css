@@ -1,0 +1,23 @@
+/* Forum.css 또는 해당 컴포넌트의 CSS 파일 */
+
+.mbti-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4개의 열로 그리드 설정 */
+row-gap: 15px;
+    column-gap: 15px;
+
+}
+
+.mbti-grid a {
+    text-decoration: none;
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 8px;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.mbti-grid a:hover {
+    background-color: #e0e0e0;
+}
